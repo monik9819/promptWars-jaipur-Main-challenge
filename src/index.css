@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-slate-800 bg-slate-50;
+  }
+}
+
+/* Custom Scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-300;
+}
